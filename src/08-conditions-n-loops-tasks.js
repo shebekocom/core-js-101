@@ -43,10 +43,10 @@ function getFizzBuzz(/* num */) {
  *   5  => 120
  *   10 => 3628800
  */
-function getFactorial(/* n */) {
-  throw new Error('Not implemented');
-}
 
+function getFactorial(n) {
+  return (n !== 1) ? n * getFactorial(n - 1) : 1;
+}
 
 /**
  * Returns the sum of integer numbers between n1 and n2 (inclusive).
